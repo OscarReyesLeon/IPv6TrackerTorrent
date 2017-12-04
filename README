@@ -14,6 +14,10 @@ Este software se esta probando en el siguiente rastreador publico:
 
 http://alpha.torrenttracker.nl:443/announce
 
+y puede ver las estadisticas en el siguiente link:
+
+http://alpha.torrenttracker.nl:443/stats
+
 
 Para instalar en "GNU/Linux Debian 8 Jessie" los comandos son los siguientes.
 
