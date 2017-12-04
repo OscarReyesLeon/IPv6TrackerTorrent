@@ -1,13 +1,18 @@
 RELOTracker es una derivación de OpenTrackerIPv6.
 
-El codigo es muy original al OpenTracker Original de Erdgeist, solo se modifico en la pre compilación para que tenga soporte en IPv6
-para sacar el OpenTrackerIPv6 y es el que se recomienda usar.
+El codigo es muy original al OpenTracker Original de Erdgeist, pero se recomienda usar OpenTrackerIPv6 en todos los casos.
 
-Esta version la puede encontrar en el siguiente link.
+Usted lo puede obtener en el siguiente link:
 
 https://github.com/OscarReyesLeon/OpenTrackerIPv6
 
+
 En el caso de RELOTracker se realizo una modificación en la forma de devolver los peers, rompe el protocolo pero sin embargo aparece online en NewTrackon.
+
+Este software se esta probando en el siguiente rastreador publico:
+
+http://alpha.torrenttracker.nl:443/announce
+
 
 Para instalar los comandos son los siguientes.
 
@@ -21,12 +26,8 @@ Para instalar los comandos son los siguientes.
 
 Terminado.  El puerto predeterminado es el 443 y el 6969, para IPv6 se recomienda usar http en ves de UDP, ya que en UDP necesita jumboframe para soportar la longitud del IPv6.
 
-Si usted tiene alguna duda se puede comunicar conmigo al +524131011127
+Si usted tiene alguna duda se puede comunicar conmigo al +524131011127 preferentemente por WhatsApp.
 
-Este software se esta probando en el siguiente rastreador publico:
-
-http://alpha.torrenttracker.nl:443/announce
-
-Original Software.
+Software Original.
 http://www.fefe.de/libowfatEn
 https://erdgeist.org/arts/software/opentracker/
