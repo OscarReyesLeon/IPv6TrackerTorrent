@@ -18,7 +18,7 @@ typedef struct { ot_ip6 address; int bits; }
                 ot_net;
 #ifdef WANT_V6
 #define OT_IP_SIZE 16
-#define PEERS_BENCODED "6:peers6"
+#define PEERS_BENCODED "5:peers0:6:peers6"
 #else
 #define OT_IP_SIZE 4
 #define PEERS_BENCODED "5:peers"
