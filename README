@@ -1,9 +1,15 @@
-OpenTrackerIPv6 is a Open Tracker Torrent on IPv6
+RELOTracker es una derivación de OpenTrackerIPv6.
 
-This is pretty much the original Erdgeist program, but with a couple of motions ready to run on IPv6
+El codigo es muy original al OpenTracker Original de Erdgeist, solo se modifico en la pre compilación para que tenga soporte en IPv6
+para sacar el OpenTrackerIPv6 y es el que se recomienda usar.
 
-Install on Debian 8.
+Esta version la puede encontrar en el siguiente link.
 
+https://github.com/OscarReyesLeon/OpenTrackerIPv6
+
+En el caso de RELOTracker se realizo una modificación en la forma de devolver los peers, rompe el protocolo pero sin embargo aparece online en NewTrackon.
+
+Para instalar los comandos son los siguientes.
 
 # sudo su
 
@@ -13,9 +19,13 @@ Install on Debian 8.
  
 # cd OpenTrackerIPv6/ && chmod 777 install.sh && ./install.sh
 
-Finish.  Default port is 443 and 6969
+Terminado.  El puerto predeterminado es el 443 y el 6969, para IPv6 se recomienda usar http en ves de UDP, ya que en UDP necesita jumboframe para soportar la longitud del IPv6.
 
-https://youtu.be/DUNvZ4DMGdA
+Si usted tiene alguna duda se puede comunicar conmigo al +524131011127
+
+Este software se esta probando en el siguiente rastreador publico:
+
+http://alpha.torrenttracker.nl:443/announce
 
 Original Software.
 http://www.fefe.de/libowfatEn
