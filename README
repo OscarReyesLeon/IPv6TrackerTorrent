@@ -1,20 +1,21 @@
 RELOTracker es una derivación de OpenTrackerIPv6.
 
-El codigo es muy original al OpenTracker Original de Erdgeist, pero se recomienda usar OpenTrackerIPv6 en todos los casos.
+Se recomienda usar OpenTrackerIPv6.
 
 Usted lo puede obtener en el siguiente link:
 
 https://github.com/OscarReyesLeon/OpenTrackerIPv6
 
 
-En el caso de RELOTracker se realizo una modificación en la forma de devolver los peers, rompe el protocolo pero sin embargo aparece online en NewTrackon.
+En el caso de RELOTracker se realizo una modificación en la forma de devolver los peers, es diferente el protocolo pero sin embargo aparece online en NewTrackon.
+Por cuestiones de rendimiento no conviene usar el DualStack, y es preferible ingresar todos los peers en una sola variable que es peers6, los clientes lo soportan perfectamente y el esfuerzo lo realizan los clientes, para los clientes es un esfuerzo minimo al igual que para el rastrador, pero por minimo que sea; al tener millones de consultas se vuelve en una carga a considerar.
 
 Este software se esta probando en el siguiente rastreador publico:
 
 http://alpha.torrenttracker.nl:443/announce
 
 
-Para instalar los comandos son los siguientes.
+Para instalar en "GNU/Linux Debian 8 Jessie" los comandos son los siguientes.
 
 # sudo su
 
