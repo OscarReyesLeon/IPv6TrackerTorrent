@@ -415,7 +415,7 @@ static size_t stats_peers_mrtg( char * reply ) {
 
   iterate_all_torrents( torrent_statter, (uintptr_t)&stats );
 
-  return sprintf( reply, "Leechers: %llu\nSeeders %llu\nserving %llu torrents\nRELO-Tracker-IPv6 \n\nhttps://github.com/OscarReyesLeon/ReloTracker",
+  return sprintf( reply, "Leechers: %llu\nSeeders %llu\nServing %llu torrents\nRELO-Tracker-IPv6 \n\nhttps://github.com/OscarReyesLeon/ReloTracker",
                  stats.peer_count,
                  stats.seed_count,
                  stats.torrent_count
@@ -426,7 +426,7 @@ static size_t stats_torrents_mrtg( char * reply )
 {
   size_t torrent_count = mutex_get_torrent_count();
 
-  return sprintf( reply, "Leechers: %zd\nSeeders %zd\nserving %zd torrents\nRELO-Tracker-IPv6 \n\nhttps://github.com/OscarReyesLeon/ReloTracker",
+  return sprintf( reply, "Leechers: %zd\nSeeders %zd\nServing %zd torrents\nRELO-Tracker-IPv6 \n\nhttps://github.com/OscarReyesLeon/ReloTracker",
                  torrent_count,
                  (size_t)0,
                  torrent_count
