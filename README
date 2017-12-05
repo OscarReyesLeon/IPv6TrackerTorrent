@@ -6,11 +6,13 @@ Usted lo puede obtener en el siguiente link:
 
 https://github.com/OscarReyesLeon/OpenTrackerIPv6
 
+En el caso de RELOTracker se realizo una modificación en la forma de devolver los peers, es diferente al protocolo pero sin embargo aparece online en NewTrackon.
+Por cuestiones de rendimiento no conviene usar el DualStack, y es preferible ingresar todos los peers en una sola variable que es peers6,
+los clientes lo entienden perfectamente y ellos realizan las conexiones a IPv6 e IPv4. 
+Realizar esa separación es un esfuerzo minimo, pero si se hace esa separación en el servidor, al recibir millones de consultas seria una carga de trabajo considerable.
 
-En el caso de RELOTracker se realizo una modificación en la forma de devolver los peers, es diferente el protocolo pero sin embargo aparece online en NewTrackon.
-Por cuestiones de rendimiento no conviene usar el DualStack, y es preferible ingresar todos los peers en una sola variable que es peers6, los clientes lo soportan perfectamente y el esfuerzo lo realizan los clientes, para los clientes es un esfuerzo minimo al igual que para el rastrador, pero por minimo que sea; al tener millones de consultas se vuelve en una carga a considerar.
 
-Este software se esta probando en el siguiente rastreador publico:
+El software RELOTracker se esta probando en el siguiente rastreador publico:
 
 http://alpha.torrenttracker.nl:443/announce
 
@@ -25,6 +27,7 @@ Para instalar en "GNU/Linux Debian 8 Jessie" los comandos son los siguientes.
 
 # cd /root && apt-get update && apt-get install make cvs zlib1g-dev libgtk2.0-dev git && git clone https://github.com/OscarReyesLeon/ReloTracker && cd ReloTracker/ && chmod 777 install.sh && ./install.sh
 
+
 Terminado.  El puerto predeterminado es el 443 y el 6969, para IPv6 se recomienda usar http en ves de UDP, ya que en UDP necesita jumboframe para soportar la longitud del IPv6.
 
 Si usted tiene alguna duda se puede comunicar conmigo al +524131011127 preferentemente por WhatsApp.
@@ -32,3 +35,14 @@ Si usted tiene alguna duda se puede comunicar conmigo al +524131011127 preferent
 Software Original.
 http://www.fefe.de/libowfatEn
 https://erdgeist.org/arts/software/opentracker/
+
+
+
+
+
+--------------
+Chihaya Tracker separá correctamente los clientes IPv4 en peers o los clientes IPv6 en peers y puedes usar el instalador de Elico para Centos.
+https://github.com/chihaya/chihaya/issues/321#issuecomment-305806045
+
+o tambien te dejo la pagina principal,
+https://github.com/chihaya/chihaya
